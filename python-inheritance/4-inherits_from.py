@@ -2,6 +2,7 @@
 
 """Module that contains a function to check isinstance"""
 
+
 def inherits_from(obj, a_class):
     """Function to check obj is an instance of the specified class
     that inherited (directly or indirectly) from the specified class"""
