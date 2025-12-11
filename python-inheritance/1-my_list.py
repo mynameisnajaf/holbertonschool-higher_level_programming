@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Module that provides a function to that prints the list, but sorted (ascending sort).
+Module that provides a function to that prints the list, but sorted.
 """
 
 
