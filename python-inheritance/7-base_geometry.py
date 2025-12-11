@@ -1,17 +1,18 @@
 #!/usr/bin/python3
-
-"""Module that contains an error class"""
+"""
+Module consists of a class name 'BaseGeometry'
+"""
 
 
 class BaseGeometry:
-    """Contains a function to raise error"""
+    """Class of BaseGeometry"""
     def area(self):
-        """Function that raises Exception"""
+        """Method that raises Exception."""
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """A function that validates value"""
-        if not isinstance(value, int):
+        """method that validates value"""
+        if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
-        if value <= 0:
+        elif value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
