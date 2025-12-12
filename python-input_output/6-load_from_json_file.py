@@ -7,5 +7,5 @@ import json
 
 def load_from_json_file(filename):
     """Function to read object from json file"""
-    with open("{}".format(filename), 'r') as json_file:
-        my_obj = json.load(json_file)
+    with open("{}".format(filename), 'r', encoding='utf-8') as json_file:
+        return json.load(json_file)
