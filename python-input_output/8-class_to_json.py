@@ -9,4 +9,3 @@ def class_to_json(obj):
     for JSON serialization.
     """
     return obj.__dict__
-
