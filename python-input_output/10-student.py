@@ -17,7 +17,7 @@ class Student:
         if attrs is None:
             return self.__dict__.copy()
         else:
-            filtered={}
+            filtered = {}
             for attr in attrs:
                 if attr in self.__dict__:
                     filtered[attr] = self.__dict__[attr]
