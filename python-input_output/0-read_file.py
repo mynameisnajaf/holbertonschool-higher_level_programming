@@ -7,4 +7,4 @@
 def read_file(filename=""):
     """Function to read and print file"""
     with open("{}".format(filename), encoding="utf-8") as f:
-       print(f.read(), end="")
+        print(f.read(), end="")
