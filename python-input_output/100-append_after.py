@@ -5,6 +5,6 @@
 
 def append_after(filename="", search_string="", new_string=""):
     """A function that contains bla bla"""
-    with open("{}".format(filename), "a") as f:
+    with open("{}".format(filename), "a", encoding="utf-8") as f:
         if search_string == new_string:
-            f.write(search_string)
+            return f.write(search_string)
