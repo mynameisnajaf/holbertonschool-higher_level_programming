@@ -23,22 +23,6 @@ def deserialize_from_xml(filename):
         root = tree.getroot()
         recon_dict = {}
         for child in root:
-            text = child.text
-            if text is None:
-                value = None
-            elif text.isdigit():
-                value = int(text)
-            else:
-                try:
-                    value = float(text)
-                except ValueError:
-                    if text.lower() == "true":
-                        value = True
-                    elif text.lower() == "false":
-                        value = False
-                    else:
-                        value = text
-
             recon_dict[child.tag] = value
 
         return recon_dict
