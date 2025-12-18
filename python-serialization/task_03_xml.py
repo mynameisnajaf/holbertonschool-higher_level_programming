@@ -23,7 +23,7 @@ def deserialize_from_xml(filename):
         root = tree.getroot()
         recon_dict = {}
         for child in root:
-            recon_dict[child.tag] = value
+            recon_dict[child.tag] = child.text
 
         return recon_dict
     except (OSError, ET.ParseError):
