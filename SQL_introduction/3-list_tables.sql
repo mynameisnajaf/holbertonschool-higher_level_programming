@@ -1,0 +1,2 @@
+-- Listing tables
+SHOW TABLES; 
