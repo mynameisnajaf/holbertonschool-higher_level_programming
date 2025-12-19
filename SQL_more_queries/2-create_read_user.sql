@@ -1,6 +1,4 @@
---creates the database hbtn_0d_2 and the user user_0d_2
+-- script creates database
 CREATE DATABASE IF NOT EXISTS hbtn_0d_2;
-DROP USER IF EXISTS 'user_0d_2'@'localhost';
-CREATE USER 'user_0d_2'@'localhost' IDENTIFIED BY 'user_0d_2_pwd';
-GRANT USAGE ON *.* TO 'user_0d_2'@'localhost';
+CREATE USER IF NOT EXISTS 'user_0d_2'@'localhost' IDENTIFIED BY 'user_0d_2_pwd';
 GRANT SELECT ON hbtn_0d_2.* TO 'user_0d_2'@'localhost';
